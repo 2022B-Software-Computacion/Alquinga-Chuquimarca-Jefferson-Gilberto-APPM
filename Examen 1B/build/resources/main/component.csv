@@ -1,0 +1,8 @@
+code,name,description,discontinued,device_code_fk
+1,Resistor,10K ohm ceramic resistor,false,1
+2,Resistor,10K ohm ceramic resistor,false,2
+3,Transistor,NPN transistor BD244B,false,1
+4,Transistor,NPN transistor BD246B,true,2
+5,Capacitor,10uf ceramic capacitor,false,1
+6,Capacitor,10uf ceramic capacitor,false,2
+7,Capacitor,100uf electrolytic capacitor,true,2
