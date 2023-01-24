@@ -16,10 +16,7 @@ class MainView {
     }
 
     private fun printBanner() {
-        print(
-            "==============================\n" +
-            "====EXAMEN PRIMER BIMESTRE ===\n" +
-            "==========BIENVENIDOS=========\n"
+        print("==========BIENVENIDOS=========\n"
         )
     }
 

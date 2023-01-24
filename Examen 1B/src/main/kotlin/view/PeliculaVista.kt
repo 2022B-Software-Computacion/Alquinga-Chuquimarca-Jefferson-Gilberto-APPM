@@ -14,8 +14,8 @@ class PeliculaVista {
                     "3. Actualizar pelicula por código (ACTUALIZAR).\n" +
                     "4. Eliminar pelicula por código (ELIMINAR).\n" +
                     "5. Obtener todas las peliculas.\n" +
-                    "6. Obtener libros por categoría.\n" +
-                    "7. Obtener libros por precio máximo .\n" +
+                    "6. Obtener película por categoría.\n" +
+                    "7. Obtener película por precio máximo .\n" +
                     "0. Volver al menú inicial.\n\n" +
                     "Ingrese su opción: "
         )
@@ -47,7 +47,7 @@ class PeliculaVista {
         val pelicula: Pelicula?
 
         println("\n===   DEVICE INSERTION   ===\n")
-        print("Ingrese el código de la Película")
+        print("Ingrese el código de la Película: ")
         deviceCode = readLine()!!.toInt()
 
         print("Ingrese el nombre de la Película: ")
@@ -73,11 +73,22 @@ class PeliculaVista {
         val deviceCode: Int?
 
         println("\n===   PELICULA LEER   ===\n")
-        print("Ingrese el código de la ue deseaPelícula leer: ")
-        deviceCode = readLine()!!.toInt()
+        print("Ingrese el código de la película que desea ver: ")
 
-        println("\nCÓDIGO\tPELÍCULA\t\t\t\t\t\t   CATEGORÍA\t\t\t\tFECHA DE LANZAMIENTO\tPRECIO")
-        println(DAOFactory.factory.getDeviceDAO().read(deviceCode))
+
+
+            deviceCode = readLine()!!.toInt()
+
+        if( deviceCode == readLine()!!.toInt()) {
+
+            println("\nCÓDIGO\tPELÍCULA\t\t\t\t\t\t   CATEGORÍA\t\t\t\tFECHA DE LANZAMIENTO\t\t\tPRECIO")
+            println(DAOFactory.factory.getDeviceDAO().read(deviceCode))
+
+        if(deviceCode !== readLine()!!.toInt()){
+            println("No existe Pelicula")
+        }
+
+        }
     }
 
     private fun processDeviceUpdate() {

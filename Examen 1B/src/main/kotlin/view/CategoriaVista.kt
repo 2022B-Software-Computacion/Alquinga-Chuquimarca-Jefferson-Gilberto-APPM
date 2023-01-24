@@ -13,8 +13,8 @@ class CategoriaVista {
                     "3. Actualizar categoría por código (ACTUALIZAR).\n" +
                     "4. Eliminar categoría por código (ELIMINAR).\n" +
                     "5. Obtener todas las categorías.\n" +
-                    "6. Obtener libros por categoría.\n" +
-                    "7. Obtener libros por precio máximo .\n" +
+                    "6. Obtener Película por categoría.\n" +
+                    "7. Obtener Película por precio máximo .\n" +
                     "0. Volver al menú inicial.\n\n" +
                     "Ingrese su opción: "
         )
@@ -75,7 +75,7 @@ class CategoriaVista {
         print("Ingrese el código de cátegoria que desee ver: ")
         componentCode = readLine()!!.toInt()
 
-        println("\nCÓDIGO\tPELÍCULA\t\t\t\t\t\t   DESCRIPCIÓN\t\t\t\t\t\t\t\tDESCONTINUADO\t\tCÓDIGO DE CATEGORÍA")
+        println("\nCÓDIGO\tCATEGORÍA\t\t\t\t\t\t   DESCRIPCIÓN\t\t\t\t\t\t\t\tPELÍCULA\t\tCÓDIGO DE CATEGORÍA")
         println(DAOFactory.factory.getComponentDAO().read(componentCode))
     }
 
