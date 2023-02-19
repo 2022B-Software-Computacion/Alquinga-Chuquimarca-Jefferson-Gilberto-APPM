@@ -1,4 +1,0 @@
-code,name,description,discontinued,device_code_fk
-1,Terror,Películas enfocadas al miedo y pánico,false,1
-2,Aventura,Películas enfocadas a entretenimiento con exploraciones ,false,2
-3,Drama,Películas enfocadas en personajes con dramtización,false,3
